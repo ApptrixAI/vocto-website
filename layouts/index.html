@@ -1,0 +1,151 @@
+{{ define "main" }}
+{{ $icon := resources.Get "images/icon.png" }}
+<section class="hero" id="top">
+  <div class="hero-glow hero-glow--one" aria-hidden="true"></div>
+  <div class="hero-glow hero-glow--two" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <p class="eyebrow"><span></span>{{ site.Params.launchStatus }}</p>
+      <h1>Your meetings.<br><span>Your machine.</span><br>Your record.</h1>
+      <p class="hero-lede">Vocto turns conversations into searchable transcripts, clear minutes and accountable action items — with a local-first approach that keeps private work private.</p>
+      <div class="hero-actions">
+        <a class="button button--primary" href="#beta">Join the private beta <span aria-hidden="true">→</span></a>
+        <a class="button button--quiet" href="#workflow">See how it works</a>
+      </div>
+      <ul class="trust-list" aria-label="Product principles">
+        <li><span aria-hidden="true">✓</span> On-device by design</li>
+        <li><span aria-hidden="true">✓</span> Human-reviewed</li>
+        <li><span aria-hidden="true">✓</span> Built for your platforms</li>
+      </ul>
+    </div>
+    <div class="hero-visual reveal reveal--delay">
+      <div class="icon-halo" aria-hidden="true"></div>
+      {{ with $icon }}{{ $hero := .Resize "720x webp q88" }}
+      <img class="app-icon" src="{{ $hero.RelPermalink }}" width="620" height="620" alt="Vocto app icon: a microphone, soundwave and completed action list">
+      {{ end }}
+      <div class="floating-card floating-card--summary" aria-hidden="true">
+        <span class="mini-label">Meeting summary</span>
+        <strong>Project direction aligned</strong>
+        <span class="mini-line"></span><span class="mini-line mini-line--short"></span>
+      </div>
+      <div class="floating-card floating-card--action" aria-hidden="true">
+        <span class="check">✓</span><span><strong>3 actions</strong><small>Ready to review</small></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="signal-bar" aria-label="Vocto benefits">
+  <div class="wrap signal-grid">
+    <p><strong>Capture</strong><span>Conversations and recordings</span></p>
+    <i aria-hidden="true">→</i>
+    <p><strong>Understand</strong><span>Transcripts, minutes, decisions</span></p>
+    <i aria-hidden="true">→</i>
+    <p><strong>Follow through</strong><span>Reviewed actions and recall</span></p>
+  </div>
+</section>
+
+<section class="section workflow" id="workflow">
+  <div class="wrap">
+    <div class="section-heading reveal">
+      <p class="kicker">From conversation to clarity</p>
+      <h2>The meeting ends.<br>The useful work begins.</h2>
+      <p>Vocto carries the thread from what was said to what happens next — while keeping you in control.</p>
+    </div>
+    <div class="step-grid">
+      <article class="step-card reveal">
+        <div class="step-top"><span class="step-no">01</span><span class="step-icon" aria-hidden="true">◉</span></div>
+        <h3>Capture & transcribe</h3>
+        <p>Bring in a recording or capture a meeting, then turn the conversation into an editable transcript.</p>
+        <span class="card-tag">Private by default</span>
+      </article>
+      <article class="step-card step-card--feature reveal reveal--delay">
+        <div class="step-top"><span class="step-no">02</span><span class="step-icon" aria-hidden="true">✦</span></div>
+        <h3>Structure what matters</h3>
+        <p>Surface the summary, minutes, decisions and action items — with clear links back to the conversation.</p>
+        <span class="card-tag">More than a transcript</span>
+      </article>
+      <article class="step-card reveal reveal--delay-2">
+        <div class="step-top"><span class="step-no">03</span><span class="step-icon" aria-hidden="true">✓</span></div>
+        <h3>Review & remember</h3>
+        <p>Edit and approve the output, then search your meeting history when you need the detail again.</p>
+        <span class="card-tag">You stay in control</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section privacy" id="privacy">
+  <div class="wrap privacy-grid">
+    <div class="privacy-visual reveal" aria-hidden="true">
+      <div class="privacy-orbit privacy-orbit--outer"></div>
+      <div class="privacy-orbit privacy-orbit--inner"></div>
+      <div class="lock-mark"><span>⌁</span></div>
+      <span class="privacy-chip chip--one">Audio</span>
+      <span class="privacy-chip chip--two">Transcript</span>
+      <span class="privacy-chip chip--three">Minutes</span>
+    </div>
+    <div class="privacy-copy reveal reveal--delay">
+      <p class="kicker kicker--light">Privacy is the product</p>
+      <h2>Your conversations should stay yours.</h2>
+      <p>Vocto is designed around local processing and storage, so confidential meeting material stays under your control instead of becoming another cloud dependency.</p>
+      <ul class="feature-list">
+        <li><span>01</span><div><strong>On-device by design</strong><p>Core meeting content is processed locally.</p></div></li>
+        <li><span>02</span><div><strong>Review before action</strong><p>Nothing consequential should be accepted without you.</p></div></li>
+        <li><span>03</span><div><strong>Your record, your way</strong><p>Edit, search and export the work you create.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section recall">
+  <div class="wrap recall-grid">
+    <div class="recall-copy reveal">
+      <p class="kicker">Built for recall</p>
+      <h2>Find the decision,<br>not just the file.</h2>
+      <p>Search across meetings, transcripts, decisions and actions to recover the context you need — without reconstructing it from scattered notes.</p>
+      <div class="question-pills" aria-label="Example searches">
+        <span>“What did we decide about launch?”</span>
+        <span>“Which actions are mine?”</span>
+      </div>
+    </div>
+    <div class="search-demo reveal reveal--delay" aria-label="Illustration of a Vocto search result">
+      <div class="search-box"><span aria-hidden="true">⌕</span> What did we decide about launch?</div>
+      <div class="answer-card">
+        <div class="answer-label"><span>✦</span> Across your meetings</div>
+        <p>The team agreed to begin with a focused private beta, gather feedback, and review launch scope after the first cohort.</p>
+        <div class="source-row"><span>Product planning</span><span>24:18</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="platforms" id="platforms">
+  <div class="wrap platforms-inner reveal">
+    <p class="kicker">One meeting workspace</p>
+    <h2>Coming to the devices you use.</h2>
+    <p>Vocto is in development for iPhone, Mac and Android.</p>
+    <div class="platform-list">
+      <div><span aria-hidden="true">●</span><strong>iOS</strong><small>In development</small></div>
+      <div><span aria-hidden="true">◆</span><strong>macOS</strong><small>In development</small></div>
+      <div><span aria-hidden="true">▲</span><strong>Android</strong><small>In development</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="section beta" id="beta">
+  <div class="wrap beta-card reveal">
+    <div class="beta-glow" aria-hidden="true"></div>
+    <p class="kicker kicker--light">Private beta</p>
+    <h2>Be there for the<br>first conversation.</h2>
+    <p>Vocto isn’t public yet. We’re preparing an early beta for people who care about useful meeting records and genuinely private workflows.</p>
+    {{ if site.Params.waitlistURL }}
+      <a class="button button--white" href="{{ site.Params.waitlistURL }}">Request beta access <span aria-hidden="true">→</span></a>
+    {{ else }}
+      <span class="button button--white button--disabled" aria-disabled="true">Waitlist opening soon</span>
+    {{ end }}
+    <small>No download links yet. No launch spam.</small>
+  </div>
+</section>
+{{ end }}
+

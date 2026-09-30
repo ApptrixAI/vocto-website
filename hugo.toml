@@ -1,0 +1,14 @@
+baseURL = "https://vocto.ai"
+locale = "en-GB"
+title = "Vocto — Private meeting intelligence"
+enableRobotsTXT = true
+relativeURLs = true
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[params]
+  description = "Vocto turns meetings into transcripts, clear minutes and action items — privately, with processing designed to stay on your device."
+  launchStatus = "Private beta coming soon"
+  waitlistURL = ""
+
+[minify]
+  minifyOutput = true
