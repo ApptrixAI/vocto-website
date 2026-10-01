@@ -8,7 +8,8 @@ disableKinds = ["taxonomy", "term", "RSS"]
 [params]
   description = "Vocto turns meetings into transcripts, clear minutes and action items — privately, with processing designed to stay on your device."
   launchStatus = "Private beta coming soon"
-  waitlistURL = ""
+  mailerliteAccount = "2454690"
+  mailerliteForm = "GUtVtN"
 
 [minify]
   minifyOutput = true

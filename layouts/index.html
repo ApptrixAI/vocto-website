@@ -139,8 +139,11 @@
     <p class="kicker kicker--light">Private beta</p>
     <h2>Be there for the<br>first conversation.</h2>
     <p>Vocto isn’t public yet. We’re preparing an early beta for people who care about useful meeting records and genuinely private workflows.</p>
-    {{ if site.Params.waitlistURL }}
-      <a class="button button--white" href="{{ site.Params.waitlistURL }}">Request beta access <span aria-hidden="true">→</span></a>
+    {{ if and site.Params.mailerliteAccount site.Params.mailerliteForm }}
+      <div class="beta-form">
+        <div class="ml-embedded" data-form="{{ site.Params.mailerliteForm }}"></div>
+        <noscript>Please enable JavaScript to request beta access.</noscript>
+      </div>
     {{ else }}
       <span class="button button--white button--disabled" aria-disabled="true">Waitlist opening soon</span>
     {{ end }}
