@@ -7,7 +7,7 @@
     <div class="hero-copy reveal">
       <p class="eyebrow"><span></span>{{ site.Params.launchStatus }}</p>
       <h1>Your meetings.<br><span>Your machine.</span><br>Your record.</h1>
-      <p class="hero-lede">Vocto turns conversations into searchable transcripts, clear minutes and accountable action items — with a local-first approach that keeps private work private.</p>
+      <p class="hero-lede">Vocto turns conversations into editable transcripts, clear meeting minutes and accountable action items — with a local-first approach that keeps private work private.</p>
       <div class="hero-actions">
         <a class="button button--primary" href="#beta">Join the private beta <span aria-hidden="true">→</span></a>
         <a class="button button--quiet" href="#workflow">See how it works</a>
@@ -41,7 +41,7 @@
     <i aria-hidden="true">→</i>
     <p><strong>Understand</strong><span>Transcripts, minutes, decisions</span></p>
     <i aria-hidden="true">→</i>
-    <p><strong>Follow through</strong><span>Reviewed actions and recall</span></p>
+    <p><strong>Follow through</strong><span>Reviewed minutes and actions</span></p>
   </div>
 </section>
 
@@ -67,8 +67,8 @@
       </article>
       <article class="step-card reveal reveal--delay-2">
         <div class="step-top"><span class="step-no">03</span><span class="step-icon" aria-hidden="true">✓</span></div>
-        <h3>Review & remember</h3>
-        <p>Edit and approve the output, then search your meeting history when you need the detail again.</p>
+        <h3>Review & share</h3>
+        <p>Edit and approve the minutes and actions, then keep a tidy record of every meeting for when you need the detail again.</p>
         <span class="card-tag">You stay in control</span>
       </article>
     </div>
@@ -92,29 +92,41 @@
       <ul class="feature-list">
         <li><span>01</span><div><strong>On-device by design</strong><p>Core meeting content is processed locally.</p></div></li>
         <li><span>02</span><div><strong>Review before action</strong><p>Nothing consequential should be accepted without you.</p></div></li>
-        <li><span>03</span><div><strong>Your record, your way</strong><p>Edit, search and export the work you create.</p></div></li>
+        <li><span>03</span><div><strong>Your record, your way</strong><p>Edit, review and export the work you create.</p></div></li>
       </ul>
     </div>
   </div>
 </section>
 
-<section class="section recall">
-  <div class="wrap recall-grid">
-    <div class="recall-copy reveal">
-      <p class="kicker">Built for recall</p>
-      <h2>Find the decision,<br>not just the file.</h2>
-      <p>Search across meetings, transcripts, decisions and actions to recover the context you need — without reconstructing it from scattered notes.</p>
-      <div class="question-pills" aria-label="Example searches">
-        <span>“What did we decide about launch?”</span>
-        <span>“Which actions are mine?”</span>
+<section class="section minutes" id="minutes">
+  <div class="wrap minutes-grid">
+    <div class="minutes-copy reveal">
+      <p class="kicker">Minutes, ready when you are</p>
+      <h2>The minutes,<br>already drafted.</h2>
+      <p>Vocto prepares structured meeting minutes from the transcript — the summary, the decisions and who agreed to do what — so you review and approve instead of writing up from scratch.</p>
+      <div class="section-pills" aria-label="What the minutes include">
+        <span>Summary</span>
+        <span>Decisions</span>
+        <span>Action items</span>
+        <span>Open questions</span>
       </div>
     </div>
-    <div class="search-demo reveal reveal--delay" aria-label="Illustration of a Vocto search result">
-      <div class="search-box"><span aria-hidden="true">⌕</span> What did we decide about launch?</div>
-      <div class="answer-card">
-        <div class="answer-label"><span>✦</span> Across your meetings</div>
+    <div class="minutes-demo reveal reveal--delay" aria-label="Illustration of meeting minutes prepared by Vocto">
+      <div class="minutes-head"><span><strong>Product planning</strong> · 42 min</span><em>Draft minutes</em></div>
+      <div class="minutes-card">
+        <div class="minutes-label">Summary</div>
         <p>The team agreed to begin with a focused private beta, gather feedback, and review launch scope after the first cohort.</p>
-        <div class="source-row"><span>Product planning</span><span>24:18</span></div>
+        <div class="minutes-label">Decisions</div>
+        <ul>
+          <li><i aria-hidden="true"></i><span>Private beta opens before any public launch</span></li>
+          <li><i aria-hidden="true"></i><span>Launch scope reviewed after the first cohort</span></li>
+        </ul>
+        <div class="minutes-label">Action items</div>
+        <ul>
+          <li><span aria-hidden="true">✓</span><span>Draft beta invitation criteria<small>Design lead · due Friday</small></span></li>
+          <li><span aria-hidden="true">✓</span><span>Share feedback form with the first cohort<small>Product manager · due next week</small></span></li>
+        </ul>
+        <div class="source-row"><span>Prepared from the transcript</span><span>Ready for your review</span></div>
       </div>
     </div>
   </div>
